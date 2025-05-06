@@ -5,3 +5,14 @@ They breakdown as follows:
 * `train` - a method containing training model.
 * `pred_and_plot_image` - a method use for prediction and plot the performance metrics of the trained model.
 * `save_model` - a method help to save the trained model using the pytorch based code base.
+
+# How to use this NeoroLoom
+
+`from NeuroLoom import (
+create_dataloaders,
+train_step,
+test_step,
+train,
+pred_and_plot_image,
+save_model
+)`
