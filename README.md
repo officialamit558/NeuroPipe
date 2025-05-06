@@ -1,9 +1,7 @@
 # NeuroLoom Scripts
 
 They breakdown as follows: 
-* `data_setup.py` - a file to prepare and download data if needed.
-* `engine.py` - a file containing various training functions.
-* `model_builder.py` - a file to create a PyTorch TinyVGG model.
-* `train.py` - a file to leverage all other files and train a target PyTorch model.
-* `utils.py` - a file dedicated to helpful utility functions.
-* **Extra:** `predictions.py` - a file for making predictions with a trained PyTorch model and input image (the main function, `pred_and_plot_image()` 
+* `create_dataloaders` - a method to prepare and download data if needed.
+* `train` - a method containing training model.
+* `pred_and_plot_image` - a method use for prediction and plot the performance metrics of the trained model.
+* `save_model` - a method help to save the trained model using the pytorch based code base.
