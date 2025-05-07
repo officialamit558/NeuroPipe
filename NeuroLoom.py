@@ -5,7 +5,7 @@ Contains the functionality for the creating Pytorch Dataloaders for the image cl
 import os
 import torch
 from torchvision import datasets , transforms
-from torch.utils.data import Dataloader
+from torch.utils.data import DataLoader
 from typing import Tuple , List , Dict
 from tqdm import  tqdm
 from torch import nn
@@ -77,7 +77,7 @@ def create_dataloaders(
 '''Contains the functions for training and testing the model'''
 def train_step(
         model:torch.nn.Module,
-        dataloader:torch.utils.data.Dataloader,
+        dataloader:torch.utils.data.DataLoader,
         loss_fn:torch.nn.Module,
         optimizer:torch.optim.Optimizer,
         device:torch.device
@@ -135,7 +135,7 @@ def train_step(
     return train_loss , train_acc
 
 # Write code for prepare the function to test the model
-def test_step(model:torch.nn.Module,dataloader:torch.utils.data.Dataloader,loss_fn:torch.nn.Module,device:torch.device) -> Tuple[float,float]:
+def test_step(model:torch.nn.Module,dataloader:torch.utils.data.DataLoader,loss_fn:torch.nn.Module,device:torch.device) -> Tuple[float,float]:
     """Tests a PyTorch model for a single epoch.
 
     Turns a target PyTorch model to evaluation mode and then runs through all of the required testing steps(forward
@@ -182,8 +182,8 @@ def test_step(model:torch.nn.Module,dataloader:torch.utils.data.Dataloader,loss_
 # Now we will write the function to train and test the model
 def train(
         model:torch.nn.Module,
-        train_dataloader:torch.utils.data.Dataloader,
-        test_dataloader:torch.utils.data.Dataloader,
+        train_dataloader:torch.utils.data.DataLoader,
+        test_dataloader:torch.utils.data.DataLoader,
         optimizer:torch.optim.Optimizer,
         loss_fn:torch.nn.Module,
         epochs:int,
