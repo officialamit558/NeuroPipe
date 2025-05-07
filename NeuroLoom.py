@@ -56,14 +56,14 @@ def create_dataloaders(
     class_names = train_data.classes
 
     # Turn images into data loaders
-    train_dataloader = Dataloader(
+    train_dataloader = DataLoader(
         train_data,
         batch_size=batch_size,
         shuffle=True,
         num_workers=num_workers,
         pin_memory=True,
     )
-    test_dataloader = Dataloader(
+    test_dataloader = DataLoader(
         test_data,
         batch_size=batch_size,
         shuffle=False,
