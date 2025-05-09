@@ -495,7 +495,7 @@ def plot_loss_curves(results):
 
 
 # Pred and plot image function 
-def pred_and_plot_image(
+def pred_and_plot_images(
     model: torch.nn.Module,
     image_path: str,
     class_names: List[str] = None,
