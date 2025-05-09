@@ -8,11 +8,18 @@ They breakdown as follows:
 
 # How to use this NeoroLoom
 
-`from NeuroLoom import (
-create_dataloaders,
-train_step,
-test_step,
-train,
-pred_and_plot_image,
-save_model
+`from NeuroPipe.NeuroLoom import (
+    create_dataloaders,
+    train,
+    pred_and_plot_image,
+    save_model,
+    walk_through_dir,
+    plot_loss_curves,
+    plot_decision_boundary,
+    plot_predictions,
+    accuracy_fn,
+    plot_loss_curves,
+    pred_and_plot_image,
+    set_seeds,
+    download_data
 )`
