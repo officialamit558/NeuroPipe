@@ -15,6 +15,9 @@ import numpy as np
 from PIL import Image
 import random
 from pathlib import Path
+import requests
+import zipfile
+import time
 
 NUM_WORKERS = os.cpu_count()
 def create_dataloaders(
