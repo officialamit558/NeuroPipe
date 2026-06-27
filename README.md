@@ -6,7 +6,7 @@ They breakdown as follows:
 * `pred_and_plot_image` - a method use for prediction and plot the performance metrics of the trained model.
 * `save_model` - a method help to save the trained model using the pytorch based code base.
 
-# How to use this NeoroLoom
+# How to use this NeuroLoom
 
 `from NeuroPipe.NeuroLoom import (
     create_dataloaders,
